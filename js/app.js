@@ -1,5 +1,13 @@
-const player1 = new Player('Daniel', '1', 'red', true);
-console.log(player1);
+const game = new Game();
+console.log(game);
 
-const newBoard = new Board();
-console.log(newBoard);
+
+/** 
+ * Listens for click on `#begin-game` and calls startGame() on game object
+ */
+document.getElementById('begin-game').addEventListener('click', function () {
+  game.startGame();
+
+  this.style.display = 'none';
+  document.getElementById('play-area').style.opacity = '1';
+});

@@ -17,7 +17,7 @@ class Player {
     const tokens = [];
 
     for (let index = 0; index < num; index++) {
-      const token = new Token('player1', index);
+      const token = new Token(`player-${this.id}`, index);
       tokens.push(token);
     };
 
